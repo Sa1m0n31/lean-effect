@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Lean Effect</title>
+    <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
 <div class="container">
@@ -12,12 +13,285 @@
         </h1>
 
         <ul class="menuRight">
-            <li>Zakres usług</li>
-            <li>Model Lean</li>
-            <li>Produkty</li>
-            <li class="menuItemBordered">Kontakt</li>
+            <li class="menuItem" onclick="scrollMenu(1)">Zakres usług</li>
+            <li class="menuItem" onclick="scrollMenu(2)">Model Lean</li>
+            <li class="menuItem" onclick="scrollMenu(3)">Produkty</li>
+            <li class="menuItem menuItemBordered">Kontakt</li>
         </ul>
     </menu>
+
+    <main class="landing">
+        <div class="landingLeft">
+            <h1 class="landingHeader">
+                Wspieramy<br/>
+                zdrowy rozsądek
+            </h1>
+            <p class="landingText">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+
+            <div class="landingHint">
+                <img class="landingMouse" src="./img/myszka.png" alt="czytaj-dalej" />
+                <h2 class="landingHintText">Przewijaj żeby czytać więcej</h2>
+            </div>
+        </div>
+
+        <div class="landingRight">
+            <img class="landingImg" src="./img/landing.png" alt="wspieramy-zdrowy-rozsadek" />
+        </div>
+    </main>
+
+    <!-- Zakres usług -->
+    <section class="zakresUslug">
+        <h2 class="zakresUslugHeader">
+            Zakres usług
+        </h2>
+        <h3 class="zakresUslugSubheader">
+            Po co nam LEAN MANAGEMENT?
+        </h3>
+
+        <div class="zakresUslugInner">
+            <div class="zakresUslugItem">
+                <div class="zakresUslugIconWrapper wrapper1">
+                    <img class="zakresUslugIcon" src="./img/chart.png" alt="strategia" />
+                </div>
+                <h4 class="zakresUslugItemHeader">
+                    Strategia
+                </h4>
+                <p class="zakresUslugItemText">
+                    Pozyskanie umysłów i serc zespołu do realizacji strategii firmy w praktyce.
+                </p>
+            </div>
+
+            <div class="zakresUslugItem">
+                <div class="zakresUslugIconWrapper wrapper2">
+                    <img class="zakresUslugIcon" src="./img/case.png" alt="business" />
+                </div>
+                <h4 class="zakresUslugItemHeader">
+                    Business
+                </h4>
+                <p class="zakresUslugItemText">
+                    Zapewnienie rzetelnej wiedzy w całej organizacji o faktycznych potrzebach klientów.
+                </p>
+            </div>
+
+            <div class="zakresUslugItem">
+                <div class="zakresUslugIconWrapper wrapper3">
+                    <img class="zakresUslugIcon" src="./img/book.png" alt="edukacja" />
+                </div>
+                <h4 class="zakresUslugItemHeader">
+                    Edukacja
+                </h4>
+                <p class="zakresUslugItemText">
+                    Zapewnienie umiejętności korzystania przez managerów z adekwatnych do potrzeb narzędzi.
+                </p>
+            </div>
+
+            <span class="break"></span>
+
+            <div class="zakresUslugItem">
+                <div class="zakresUslugIconWrapper wrapper4">
+                    <img class="zakresUslugIcon" src="./img/idea.png" alt="innowacje" />
+                </div>
+                <h4 class="zakresUslugItemHeader">
+                    Innowacje
+                </h4>
+                <p class="zakresUslugItemText">
+                    Zapewnienie atmosfery sprzyjającej ciągłej innowacji procesów i produktów.
+                </p>
+            </div>
+
+            <div class="zakresUslugItem">
+                <div class="zakresUslugIconWrapper wrapper5">
+                    <img class="zakresUslugIcon" src="./img/chart-2.png" alt="efektywnosc" />
+                </div>
+                <h4 class="zakresUslugItemHeader">
+                    Efektywność
+                </h4>
+                <p class="zakresUslugItemText">
+                    Zapewnienie wzrostu efektywności procesów poprzez identyfikację i eliminację marnotrawstw.
+                </p>
+            </div>
+        </div>
+
+        <button class="kontaktBtn">
+            Skontaktuj się z nami
+        </button>
+    </section>
+
+    <!-- Metodologia Lean -->
+    <section class="lean">
+        <div class="leanLeft">
+            <img class="leanLeftImg" src="./img/lean.png" alt="lean" />
+        </div>
+
+        <div class="leanRight">
+            <h2 class="leanHeaderSmall">
+                Co to takiego?
+            </h2>
+            <h3 class="leanHeaderBig">
+                Metodologia Lean
+            </h3>
+
+            <p class="leanText">
+                Model ten opiera się na kompleksowym rozumieniu przez zespół wpływu efektywności procesów na satysfakcję klienta z otrzymywanych produktów a w konsekwencji wzroście zaangażowania załogi w codzienne usprawnianie tychże procesów.
+            </p>
+            <p class="leanText">
+                Model ma zastosowanie w całej organizacji, bez względu na pozycję członka zespołu w strukturze i hierarchii, wykonywanych czynnościach, zasadach zatrudnienia czy współpracy, w myśl idei, że firmę tworzą klient, zespół i procesy.
+            </p>
+        </div>
+    </section>
+
+    <!-- Produkty -->
+    <section class="produkty">
+        <div class="produktyLeft">
+            <h2 class="produktyHeader">
+                Produkty
+            </h2>
+            <h3 class="produktySubheader">
+                Co oferujemy?
+            </h3>
+
+            <div class="produktyGrid">
+                <h4 class="obszaryWsparcia">8 obszarów wsparcia</h4>
+                <div class="produktyGridItemWrapper gridLeft">
+                    <img class="produktyGridItem" src="./img/p1.png" alt="puzzle" />
+                </div>
+                <div class="produktyGridItemWrapper">
+                    <img class="produktyGridItem" src="./img/p2.png" alt="puzzle" />
+                </div>
+                <div class="produktyGridItemWrapper gridRight">
+                    <img class="produktyGridItem" src="./img/p3.png" alt="puzzle" />
+                </div>
+                <div class="produktyGridItemWrapper gridLeft">
+                    <img class="produktyGridItem" src="./img/p4.png" alt="puzzle" />
+                </div>
+                <div class="produktyGridItemWrapper">
+                    <img class="produktyGridItem" src="./img/p5.png" alt="puzzle" />
+                </div>
+                <div class="produktyGridItemWrapper gridRight">
+                    <img class="produktyGridItem" src="./img/p6.png" alt="puzzle" />
+                </div>
+                <div class="produktyGridItemWrapper gridLeft">
+                    <img class="produktyGridItem" src="./img/p7.png" alt="puzzle" />
+                </div>
+                <div class="produktyGridItemWrapper">
+                    <img class="produktyGridItem" src="./img/p8.png" alt="puzzle" />
+                </div>
+                <div class="produktyGridItemWrapper gridRight">
+                    <img class="produktyGridItem" src="./img/p9.png" alt="puzzle" />
+                </div>
+            </div>
+        </div>
+
+        <div class="produktyRight">
+            <div class="produktyRightItem">
+                <h3 class="produktyRightHeader" onclick="produkty(1)">
+                    Strategia
+                    <span class="arrowWrapper">
+                        <img class="arrow arrowDown" src="./img/arrow.png" alt="arrow" />
+                    </span>
+                </h3>
+                <p class="produktyRightText active">
+                    Moderowanie warsztatów dotyczących refleksji nad adekwatnością misji, wizji, wartości i celów strategicznych firmy
+                </p>
+            </div>
+
+            <div class="produktyRightItem">
+                <h3 class="produktyRightHeader" onclick="produkty(2)">
+                    Strategia w praktyce
+                    <span class="arrowWrapper">
+                        <img class="arrow" src="./img/arrow.png" alt="arrow" />
+                    </span>
+                </h3>
+                <p class="produktyRightText">
+                    Moderowanie warsztatów dotyczących refleksji nad adekwatnością misji, wizji, wartości i celów strategicznych firmy
+                </p>
+            </div>
+
+            <div class="produktyRightItem">
+                <h3 class="produktyRightHeader" onclick="produkty(3)">
+                    Edukacja
+                    <span class="arrowWrapper">
+                        <img class="arrow" src="./img/arrow.png" alt="arrow" />
+                    </span>
+                </h3>
+                <p class="produktyRightText">
+                    Moderowanie warsztatów dotyczących refleksji nad adekwatnością misji, wizji, wartości i celów strategicznych firmy
+                </p>
+            </div>
+
+            <div class="produktyRightItem">
+                <h3 class="produktyRightHeader" onclick="produkty(4)">
+                    Procesy
+                    <span class="arrowWrapper">
+                        <img class="arrow" src="./img/arrow.png" alt="arrow" />
+                    </span>
+                </h3>
+                <p class="produktyRightText">
+                    Moderowanie warsztatów dotyczących refleksji nad adekwatnością misji, wizji, wartości i celów strategicznych firmy
+                </p>
+            </div>
+
+            <div class="produktyRightItem">
+                <h3 class="produktyRightHeader" onclick="produkty(5)">
+                    Zarządzanie
+                    <span class="arrowWrapper">
+                        <img class="arrow" src="./img/arrow.png" alt="arrow" />
+                    </span>
+                </h3>
+                <p class="produktyRightText">
+                    Moderowanie warsztatów dotyczących refleksji nad adekwatnością misji, wizji, wartości i celów strategicznych firmy
+                </p>
+            </div>
+
+            <div class="produktyRightItem">
+                <h3 class="produktyRightHeader" onclick="produkty(6)">
+                    Zaangażowanie
+                    <span class="arrowWrapper">
+                        <img class="arrow" src="./img/arrow.png" alt="arrow" />
+                    </span>
+                </h3>
+                <p class="produktyRightText">
+                    Moderowanie warsztatów dotyczących refleksji nad adekwatnością misji, wizji, wartości i celów strategicznych firmy
+                </p>
+            </div>
+
+            <div class="produktyRightItem">
+                <h3 class="produktyRightHeader" onclick="produkty(7)">
+                    Rozwiązywanie problemów
+                    <span class="arrowWrapper">
+                        <img class="arrow" src="./img/arrow.png" alt="arrow" />
+                    </span>
+                </h3>
+                <p class="produktyRightText">
+                    Moderowanie warsztatów dotyczących refleksji nad adekwatnością misji, wizji, wartości i celów strategicznych firmy
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <h4 class="menuLeft">
+            LeanEffect
+        </h4>
+        <div class="footerRight">
+            <div class="footerContact">
+                <img class="contactIcon" src="./img/phone.png" alt="telefon" />
+                <a href="tel:+48602509538">
+                    +48 602 509 538
+                </a>
+            </div>
+            <div class="footerContact">
+                <img class="contactIcon" src="./img/mail.png" alt="email" />
+                <a href="mailto:biuro@leaneffect.pl">
+                    biuro@leaneffect.pl
+                </a>
+            </div>
+        </div>
+    </footer>
 </div>
+<script src="./main.js"></script>
 </body>
 </html>
