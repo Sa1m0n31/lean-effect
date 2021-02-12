@@ -1,29 +1,3 @@
-/* Menu */
-const zakresUslug = document.querySelector(".zakresUslug");
-const modelLean = document.querySelector(".lean");
-const produktySection = document.querySelector(".produkty");
-
-const scrollMenu = (n) => {
-    let el;
-    switch(n) {
-        case 1:
-            el = zakresUslug;
-            break;
-        case 2:
-            el = modelLean;
-            break;
-        case 3:
-            el = produktySection;
-            break;
-        default:
-            break;
-    }
-    el.scrollIntoView({
-        top: 0,
-        behavior: "smooth"
-    });
-}
-
 /* Produkty accordion */
 const produkty1 = document.querySelector(".produktyRightItem:nth-child(1)>.produktyRightText");
 const produkty2 = document.querySelector(".produktyRightItem:nth-child(2)>.produktyRightText");
@@ -55,4 +29,62 @@ const produkty = async (n) => {
     products[n-1].style.height = "auto";
     products[n-1].style.opacity = 1;
     arrows[n-1].style.transform = "rotate(0)";
+}
+
+/* Hamburger menu */
+const menu = document.querySelector(".menuMobile");
+const list = document.querySelector(".menuMobileList");
+const container = document.querySelector(".container");
+
+const openMenu = () => {
+    console.log("open");
+    menu.style.width = "100%";
+    menu.style.height = "100vh";
+    list.style.opacity = 1;
+    container.style.height = "100vh";
+    container.style.overflowY = "hidden";
+}
+
+const closeMenu = () => {
+    console.log("close");
+    menu.style.height = "100vh";
+    menu.style.width = "0";
+    list.style.opacity = 0;
+    container.style.height = "auto";
+    container.style.overflowY = "auto";
+}
+
+/* Menu */
+const zakresUslug = document.querySelector("#zakresUslug");
+const modelLean = document.querySelector("#lean");
+const produktySection = document.querySelector("#produkty");
+const footer = document.querySelector(".footer");
+
+const scrollMenu = (n) => {
+    let el;
+
+    menu.style.height = "100vh";
+    menu.style.width = "0";
+    list.style.opacity = 0;
+    container.style.height = "auto";
+    container.style.overflowY = "auto";
+
+    switch(n) {
+        case 1:
+            el = zakresUslug;
+            break;
+        case 2:
+            el = modelLean;
+            break;
+        case 3:
+            el = produktySection;
+            break;
+        default:
+            el = footer;
+            break;
+    }
+    el.scrollIntoView({
+        top: 0,
+        behavior: "smooth"
+    });
 }
