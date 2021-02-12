@@ -69,6 +69,13 @@ header, menu, main, section {
     font-weight: 500;
     border: 1px solid #BCD0E5;
     color: #173A56;
+    transition: .5s all;
+}
+
+.menuItemBordered:hover {
+    background: #173A56;
+    color: #fff;
+    border: 1px solid #173A56;
 }
 
 /* Landing */
@@ -176,6 +183,11 @@ header, menu, main, section {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: .2s all;
+}
+
+.zakresUslugIconWrapper:hover {
+    transform: translateX(12px);
 }
 
 .wrapper1 {
@@ -225,6 +237,20 @@ header, menu, main, section {
     font-weight: 500;
     font-size: 16px;
     text-transform: uppercase;
+    transition: .4s all;
+}
+
+.kontaktBtn:hover {
+    background: #ee8800;
+}
+
+.landingMouse {
+    transition: .4s all;
+}
+
+.landingMouse:hover {
+    transform: translateY(10px);
+    opacity: .7;
 }
 
 /* Metodologia Lean */
@@ -241,6 +267,12 @@ header, menu, main, section {
 
 .leanLeft {
     width: 45%;
+}
+
+@media(min-width: 1500px) {
+    .lean {
+        justify-content: center;
+    }
 }
 
 .leanHeaderSmall {
@@ -270,6 +302,24 @@ header, menu, main, section {
     position: relative;
 }
 
+@media(min-width: 900px) {
+    .produkty {
+        height: 1420px;
+    }
+}
+
+@media(min-width: 900px) and (max-width: 1200px) {
+    .produkty {
+        justify-content: flex-start;
+    }
+}
+
+@media(min-width: 1200px) {
+    .produkty {
+        height: 800px;
+    }
+}
+
 .produkty::after {
     content: "";
     position: absolute;
@@ -277,7 +327,7 @@ header, menu, main, section {
     height: 835px;
     transform: translateX(-600px);
     border-radius: 60%;
-    bottom: -100px;
+    bottom: 50px;
     background: linear-gradient(179.61deg, rgba(255, 229, 210, 0.629261) 0.33%, rgba(255, 244, 229, 0.0001) 99.67%);
     z-index: 1;
 }
@@ -289,6 +339,11 @@ header, menu, main, section {
 
 .produktyLeft, .produktyRight {
     width: 45%;
+}
+
+.produktyRightItem {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #FFE3C7;
 }
 
 .produktyHeader {
@@ -322,6 +377,46 @@ header, menu, main, section {
 
 .gridRight {
     justify-self: flex-end;
+}
+
+.produktyGridIcon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 100;
+    transform: translate(-50%, -50%);
+}
+
+.produktyGridItemWrapper:first-of-type .produktyGridIcon {
+    transform: translate(-100%, -90%);
+}
+
+.produktyGridItemWrapper:nth-of-type(2) .produktyGridIcon {
+    transform: translate(-50%, -90%);
+}
+
+.produktyGridItemWrapper:nth-of-type(3) .produktyGridIcon {
+    transform: translate(10%, -90%);
+}
+
+.produktyGridItemWrapper:nth-of-type(4) .produktyGridIcon {
+    transform: translate(-80%, -70%);
+}
+
+.produktyGridItemWrapper:nth-of-type(6) .produktyGridIcon {
+    transform: translate(-40%, -60%);
+}
+
+.produktyGridItemWrapper:nth-of-type(7) .produktyGridIcon {
+    transform: translate(-100%, -40%);
+}
+
+.produktyGridItemWrapper:nth-of-type(8) .produktyGridIcon {
+    transform: translate(-50%, -50%);
+}
+
+.produktyGridItemWrapper:nth-of-type(9) .produktyGridIcon {
+    transform: translate(10%, -50%);
 }
 
 .obszaryWsparcia {
@@ -589,6 +684,10 @@ section {
         height: 2px;
         display: block;
     }
+
+    * {
+        -webkit-tap-highlight-color: transparent;
+    }
 }
 
 @media(max-width: 700px) {
@@ -624,6 +723,39 @@ section {
 }
 
 @media(max-width: 500px) {
+
+    .produktyGridItemWrapper:first-of-type .produktyGridIcon {
+        transform: translate(-100%, -90%) scale(.7);
+    }
+
+    .produktyGridItemWrapper:nth-of-type(2) .produktyGridIcon {
+        transform: translate(-50%, -90%) scale(.7);
+    }
+
+    .produktyGridItemWrapper:nth-of-type(3) .produktyGridIcon {
+        transform: translate(10%, -90%) scale(.7);
+    }
+
+    .produktyGridItemWrapper:nth-of-type(4) .produktyGridIcon {
+        transform: translate(-80%, -70%) scale(.7);
+    }
+
+    .produktyGridItemWrapper:nth-of-type(6) .produktyGridIcon {
+        transform: translate(-40%, -60%) scale(.7);
+    }
+
+    .produktyGridItemWrapper:nth-of-type(7) .produktyGridIcon {
+        transform: translate(-100%, -40%) scale(.7);
+    }
+
+    .produktyGridItemWrapper:nth-of-type(8) .produktyGridIcon {
+        transform: translate(-50%, -50%) scale(.7);
+    }
+
+    .produktyGridItemWrapper:nth-of-type(9) .produktyGridIcon {
+        transform: translate(10%, -50%) scale(.7);
+    }
+
     .footer {
         flex-direction: column;
         padding-bottom: 40px;
