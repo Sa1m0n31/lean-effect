@@ -83,7 +83,7 @@ header, menu, main, section {
 .landing {
     display: flex;
     justify-content: space-between;
-    margin-top: 250px;
+    margin-top: 210px;
 }
 
 .landingLeft {
@@ -102,9 +102,9 @@ header, menu, main, section {
 }
 
 .landingText {
-    font-size: 18px;
+    font-size: 15px;
     color: #544837;
-    margin-top: 70px;
+    margin-top: 20px;
 }
 
 .landingImg {
@@ -435,6 +435,11 @@ header, menu, main, section {
     font-weight: 600;
     color: #2F281E;
     cursor: pointer;
+    transition: .2s all;
+}
+
+.produktyRightHeader:hover {
+    color: #FAB005 !important;
 }
 
 .produktyRightText {
@@ -471,7 +476,7 @@ section {
 
 #produkty, #lean, #zakresUslug {
     position: absolute;
-    top: -100px;
+    top: -150px;
     left: 0;
 }
 
@@ -483,7 +488,6 @@ section {
 /* Footer */
 
 .footer {
-    margin-top: 150px;
     width: 100%;
     border-top: 1px solid rgba(188,208,229,0.5);
     padding-top: 50px;
@@ -502,7 +506,7 @@ section {
     padding-right: 20px;
 }
 
-.footerContact a {
+.footerContact a, .footerAdres {
     color: inherit;
     text-decoration: none;
     transition: .2s all;
@@ -513,12 +517,23 @@ section {
     color: #FAB005;
 }
 
+.footerAdres {
+    font-weight: 400;
+}
+
 .break {
     display: none;
 }
 
 .hamburgerMenu, .menuMobile {
     display: none;
+}
+
+.footerRight {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 100px;
 }
 
 /* RWD */
@@ -538,6 +553,10 @@ section {
 @media(max-width: 1300px) {
     .landingRight {
         width: 56%;
+    }
+
+    .footerRight {
+        padding: 0 0 0 30px;
     }
 }
 
@@ -597,6 +616,24 @@ section {
 @media(max-width: 1000px) {
     .zakresUslugItem {
         margin: 0 15px 40px;
+    }
+
+    .footerRight {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .footer {
+        flex-direction: column;
+        padding-bottom: 40px;
+    }
+
+    .footerRight {
+        margin-top: 50px;
+    }
+
+    .footerAdres {
+        margin-top: 30px;
     }
 }
 
@@ -688,6 +725,11 @@ section {
     * {
         -webkit-tap-highlight-color: transparent;
     }
+
+    .logo {
+        width: 120px !important;
+        height: calc(100px / 3.7) !important;
+    }
 }
 
 @media(max-width: 700px) {
@@ -756,15 +798,6 @@ section {
         transform: translate(10%, -50%) scale(.7);
     }
 
-    .footer {
-        flex-direction: column;
-        padding-bottom: 40px;
-    }
-
-    .footerRight {
-        margin-top: 50px;
-    }
-
     .leanLeftImg {
         width: 100%;
         height: auto;
@@ -775,7 +808,7 @@ section {
         margin-bottom: 15px;
     }
 
-    .leanHeaderSmall, .leanText, .zakresUslugSubheader, .zakresUslugItemText, .footerContact a {
+    .leanHeaderSmall, .leanText, .zakresUslugSubheader, .zakresUslugItemText, .footerContact a, .footerAdres {
         font-size: 14px;
     }
 
@@ -828,4 +861,9 @@ section {
     .kontaktBtn {
         font-size: 14px;
     }
+}
+
+.logo {
+    width: 180px;
+    height: calc(180px / 3.7);
 }
